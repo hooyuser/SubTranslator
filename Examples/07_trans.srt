@@ -1,0 +1,125 @@
+1
+00:00:00,000 --> 00:00:03,510
+With the knowledge gained from the previous module,
+从上一个模块中获得的知识
+
+2
+00:00:03,510 --> 00:00:06,350
+we can now confidently move on to creating a basic
+我们现在可以自信地继续创建一个基本的
+
+3
+00:00:06,410 --> 00:00:07,320
+T-shirt pattern.
+T恤图案
+
+4
+00:00:07,320 --> 00:00:10,440
+At this point you will become acquainted with a portion
+在这一点上，你将熟悉一部分
+
+5
+00:00:10,500 --> 00:00:12,760
+of the 2D tools and the sewing tools.
+二维工具和缝纫工具
+
+6
+00:00:12,760 --> 00:00:15,950
+Now we will get another whole pallet of tools throughout
+现在我们将得到另一整托盘的工具
+
+7
+00:00:16,000 --> 00:00:17,080
+the course as well,
+课程也一样
+
+8
+00:00:17,080 --> 00:00:20,510
+but for now, let's focus on the basic ones for
+但现在，让我们把重点放在基本问题上
+
+9
+00:00:20,590 --> 00:00:21,930
+creating patterns.
+正在创建模式
+
+10
+00:00:21,930 --> 00:00:26,560
+Tools for making patterns are the Polygon tool rectangle tool,
+制作图案的工具是多边形工具矩形工具
+
+11
+00:00:26,560 --> 00:00:30,300
+and circle tool which we use depending on the shape
+以及我们根据形状使用的圆形工具
+
+12
+00:00:30,370 --> 00:00:31,340
+that we want.
+我们想要的
+
+13
+00:00:31,340 --> 00:00:35,190
+So for now, let's grab the rectangle tool and you'll
+所以现在，让我们抓住矩形工具，你会
+
+14
+00:00:35,260 --> 00:00:38,670
+see that I'm able to create a rectangle in the
+我可以在中创建一个矩形
+
+15
+00:00:38,740 --> 00:00:41,710
+2D window by simply just clicking on it,
+只需点击二维窗口
+
+16
+00:00:41,710 --> 00:00:45,130
+and I get this dialog box where I can manually
+我得到了一个可以手动操作的对话框
+
+17
+00:00:45,210 --> 00:00:47,510
+input the width and the height,
+输入宽度和高度
+
+18
+00:00:47,510 --> 00:00:50,220
+or I can just go and drag to create a
+或者我可以直接拖动来创建
+
+19
+00:00:50,290 --> 00:00:51,040
+rectangle.
+矩形
+
+20
+00:00:51,040 --> 00:00:54,410
+So let's just create the simple rectangle over
+让我们在上面创建一个简单的矩形
+
+21
+00:00:54,410 --> 00:00:58,750
+the silhouette. Now, since we're creating a shirt,
+剪影。既然我们要做一件衬衫
+
+22
+00:00:58,750 --> 00:01:02,370
+we're starting off by creating only the left part,
+我们从只创建左边开始
+
+23
+00:01:02,370 --> 00:01:05,990
+which is actually the right part in the 3D window,
+它实际上是三维窗口中的正确部分
+
+24
+00:01:05,990 --> 00:01:09,170
+and we could make a shirt out of one pattern
+我们可以用一种图案做一件衬衫
+
+25
+00:01:09,240 --> 00:01:10,180
+in the front,
+在前面
+

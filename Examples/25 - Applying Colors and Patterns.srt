@@ -1,0 +1,535 @@
+1
+00:00:00,000 --> 00:00:03,295
+In this module will be taking a closer look at
+
+2
+00:00:03,367 --> 00:00:04,943
+the material settings,
+
+3
+00:00:04,943 --> 00:00:09,596
+which involves adding new fabrics and changing their physical properties
+
+4
+00:00:09,661 --> 00:00:11,600
+as well as their outer traits.
+
+5
+00:00:11,600 --> 00:00:14,847
+Now we will start off with changing just the colours,
+
+6
+00:00:14,847 --> 00:00:17,131
+maybe adding some patterns and so on,
+
+7
+00:00:17,131 --> 00:00:19,999
+and I will demonstrate all of this to the upper
+
+8
+00:00:20,060 --> 00:00:21,220
+part of our outfit.
+
+9
+00:00:21,220 --> 00:00:23,565
+So these two patterns and the sleeves.
+
+10
+00:00:23,565 --> 00:00:26,132
+Now if we take a look at the optic browser
+
+11
+00:00:26,193 --> 00:00:27,293
+to the fabric tab,
+
+12
+00:00:27,293 --> 00:00:30,213
+we see that we only have one default fabric that
+
+13
+00:00:30,274 --> 00:00:32,343
+is applied to all of our patterns,
+
+14
+00:00:32,343 --> 00:00:36,144
+so will start off by adding a new one by
+
+15
+00:00:36,239 --> 00:00:37,570
+clicking here.
+
+16
+00:00:37,570 --> 00:00:40,130
+And renaming it to top.
+
+17
+00:00:40,130 --> 00:00:43,417
+Now we're going to drag and drop this newly made
+
+18
+00:00:43,485 --> 00:00:45,060
+fabric to the patterns.
+
+19
+00:00:45,060 --> 00:00:48,080
+So the two front ones.
+
+20
+00:00:48,080 --> 00:00:50,840
+As well as the back ones.
+
+21
+00:00:50,840 --> 00:00:54,350
+We're going to leave these strips of fabric out.
+
+22
+00:00:54,350 --> 00:00:58,308
+And this leaves. We're also going to check by clicking
+
+23
+00:00:58,382 --> 00:00:59,188
+on the top.
+
+24
+00:00:59,188 --> 00:01:00,683
+If the fabric was applied.
+
+25
+00:01:00,683 --> 00:01:03,203
+As you can see, it gets an orange outline and
+
+26
+00:01:03,259 --> 00:01:05,611
+we see that we've applied it successfully.
+
+27
+00:01:05,611 --> 00:01:08,152
+Now let's take a look at the settings that we
+
+28
+00:01:08,209 --> 00:01:08,491
+have,
+
+29
+00:01:08,491 --> 00:01:11,160
+which opened up in the property editor.
+
+30
+00:01:11,160 --> 00:01:14,241
+First thing you'll notice is that you can make different
+
+31
+00:01:14,296 --> 00:01:15,561
+textures for the front,
+
+32
+00:01:15,561 --> 00:01:17,880
+back or side of the fabric an each tab has
+
+33
+00:01:17,935 --> 00:01:18,929
+the same settings,
+
+34
+00:01:18,929 --> 00:01:21,531
+so you can really customize this as much as you
+
+35
+00:01:21,586 --> 00:01:21,863
+like,
+
+36
+00:01:21,863 --> 00:01:25,084
+but will stick to changing the front side for now
+
+37
+00:01:25,150 --> 00:01:25,610
+though.
+
+38
+00:01:25,610 --> 00:01:29,071
+So of course, the obvious thing that we can change
+
+39
+00:01:29,140 --> 00:01:30,732
+is of course the color,
+
+40
+00:01:30,732 --> 00:01:32,235
+and if I click on it,
+
+41
+00:01:32,235 --> 00:01:35,495
+you see that I'm able to choose from every kind
+
+42
+00:01:35,564 --> 00:01:36,674
+of color I want.
+
+43
+00:01:36,674 --> 00:01:39,741
+I can even use the eyedropper tool if I need
+
+44
+00:01:39,810 --> 00:01:40,089
+too,
+
+45
+00:01:40,089 --> 00:01:42,684
+and so on. So let's go for a very dark
+
+46
+00:01:42,753 --> 00:01:44,870
+black color for now and hit OK.
+
+47
+00:01:47,190 --> 00:01:51,131
+Underneath the color option we have the specular color,
+
+48
+00:01:51,131 --> 00:01:54,995
+which gives us a shining's effect and if I demonstrate
+
+49
+00:01:55,066 --> 00:01:55,424
+this,
+
+50
+00:01:55,424 --> 00:01:58,505
+if I click on it and let's go for something
+
+51
+00:01:58,577 --> 00:01:59,365
+like wider,
+
+52
+00:01:59,365 --> 00:02:02,791
+you can see that I get this effect that looks
+
+53
+00:02:02,868 --> 00:02:07,512
+almost like leather so I can achieve very interesting effects
+
+54
+00:02:07,589 --> 00:02:08,350
+with this.
+
+55
+00:02:08,350 --> 00:02:12,225
+And I can also adjust the shininess factor so I
+
+56
+00:02:12,307 --> 00:02:14,286
+can make it very subtle,
+
+57
+00:02:14,286 --> 00:02:17,630
+or I can make it very pronounced.
+
+58
+00:02:17,630 --> 00:02:20,576
+Depending on what kind of effect I want now,
+
+59
+00:02:20,576 --> 00:02:23,830
+I can even upload a specular map to this and
+
+60
+00:02:23,904 --> 00:02:27,527
+I'm just going to quickly upload a texture that I
+
+61
+00:02:27,601 --> 00:02:29,820
+have by clicking on this icon.
+
+62
+00:02:29,820 --> 00:02:32,977
+And I'm going to choose this ornament image that I
+
+63
+00:02:33,040 --> 00:02:34,050
+have right here.
+
+64
+00:02:34,050 --> 00:02:35,410
+An if I zoom in.
+
+65
+00:02:39,280 --> 00:02:42,807
+You can see the subtle ornament within our shirt,
+
+66
+00:02:42,807 --> 00:02:47,498
+and it's usually more pronounced when the light is hitting
+
+67
+00:02:47,578 --> 00:02:51,622
+the fabric and hides when the fabric goes into the
+
+68
+00:02:51,703 --> 00:02:52,350
+shadows.
+
+69
+00:02:52,350 --> 00:02:55,531
+Course I can also manipulate this as well with the
+
+70
+00:02:55,595 --> 00:02:58,713
+shininess factor to make it more or less visible.
+
+71
+00:02:58,713 --> 00:03:00,670
+If I would like to.
+
+72
+00:03:00,670 --> 00:03:02,984
+Next, we have the emission colour.
+
+73
+00:03:02,984 --> 00:03:07,150
+The emission color is for clothing that basically emits light,
+
+74
+00:03:07,150 --> 00:03:09,663
+so I can easily change it right here,
+
+75
+00:03:09,663 --> 00:03:11,779
+but we don't need that for now,
+
+76
+00:03:11,779 --> 00:03:15,335
+so let's just cancel this and I'm also going to
+
+77
+00:03:15,411 --> 00:03:19,496
+delete the specular map by pressing on this icon right
+
+78
+00:03:19,572 --> 00:03:19,950
+here.
+
+79
+00:03:19,950 --> 00:03:22,031
+There's one thing that we forgot,
+
+80
+00:03:22,031 --> 00:03:24,050
+and at the very top of the list,
+
+81
+00:03:24,050 --> 00:03:25,457
+and that is a texture,
+
+82
+00:03:25,457 --> 00:03:27,721
+so we can also add our own textures.
+
+83
+00:03:27,721 --> 00:03:29,680
+Maybe some that we find online,
+
+84
+00:03:29,680 --> 00:03:32,005
+or some that we've created ourselves.
+
+85
+00:03:32,005 --> 00:03:34,679
+So I simply just click on this icon as with
+
+86
+00:03:34,742 --> 00:03:35,799
+the specular map.
+
+87
+00:03:35,799 --> 00:03:39,164
+And again, I'm going to use this ornament image again,
+
+88
+00:03:39,164 --> 00:03:41,000
+so just going to open that up.
+
+89
+00:03:43,380 --> 00:03:45,827
+And once I applied this texture,
+
+90
+00:03:45,827 --> 00:03:48,570
+I can also put a color on top of it.
+
+91
+00:03:48,570 --> 00:03:52,055
+So if I choose white I get the original image.
+
+92
+00:03:52,055 --> 00:03:55,517
+But I can also apply my own colors and you
+
+93
+00:03:55,600 --> 00:03:58,320
+see I get very different effects.
+
+94
+00:03:58,320 --> 00:03:59,978
+So this is very neat.
+
+95
+00:03:59,978 --> 00:04:04,649
+You can really customize your textures and patterns this way,
+
+96
+00:04:04,649 --> 00:04:07,911
+so I'm just gonna leave it to a bit of
+
+97
+00:04:07,997 --> 00:04:09,800
+an orange and hit OK.
+
+98
+00:04:09,800 --> 00:04:12,588
+Now the next thing that I would like to show
+
+99
+00:04:12,651 --> 00:04:15,693
+you is how to further manipulate these patterns,
+
+100
+00:04:15,693 --> 00:04:18,595
+because as you can see the pattern is so small
+
+101
+00:04:18,658 --> 00:04:22,066
+that it's beginning to repeat itself and maybe I would
+
+102
+00:04:22,129 --> 00:04:25,599
+like to resize it rotated or maybe changes its position
+
+103
+00:04:25,599 --> 00:04:28,126
+an I can easily do that with the help of
+
+104
+00:04:28,189 --> 00:04:31,094
+the edit texture tool that can be found in the
+
+105
+00:04:31,158 --> 00:04:34,000
+2D window right here or even in the 3D window
+
+106
+00:04:34,000 --> 00:04:36,859
+right here so I can edit and move the texture
+
+107
+00:04:36,922 --> 00:04:38,828
+in the 3D or in the 2D window.
+
+108
+00:04:38,828 --> 00:04:43,710
+It doesn't even matter. So if I zoom in.
+
+109
+00:04:43,710 --> 00:04:46,698
+If I click on the pattern you see that I
+
+110
+00:04:46,773 --> 00:04:50,284
+get this handle right here and I'm able to move
+
+111
+00:04:50,359 --> 00:04:51,330
+the patterns.
+
+112
+00:04:51,330 --> 00:04:53,200
+In any way that I would like.
+
+113
+00:04:55,220 --> 00:04:58,914
+In the upper right corner I'm also able to rotate
+
+114
+00:04:58,990 --> 00:04:59,970
+the patterns.
+
+115
+00:04:59,970 --> 00:05:03,240
+An I can also resize them.
+
+116
+00:05:03,240 --> 00:05:06,610
+Or maybe just the Y or the X axis.
+
+117
+00:05:06,610 --> 00:05:11,460
+You can also apply these changes under texture transformation.
+
+118
+00:05:11,460 --> 00:05:15,200
+That can be found under the property editor.
+
+119
+00:05:15,200 --> 00:05:18,835
+So right below the emission color we have the texture
+
+120
+00:05:18,904 --> 00:05:19,933
+transformation.
+
+121
+00:05:19,933 --> 00:05:23,070
+So if you would like to move rotate or.
+
+122
+00:05:23,070 --> 00:05:25,076
+Anything else by an exact number,
+
+123
+00:05:25,076 --> 00:05:28,642
+you can just input that here so you don't need
+
+124
+00:05:28,720 --> 00:05:30,270
+to do here manually.
+
+125
+00:05:30,270 --> 00:05:34,637
+And then the next option that we have is the
+
+126
+00:05:34,736 --> 00:05:35,530
+Opacity.
+
+127
+00:05:35,530 --> 00:05:38,530
+If I lower it, I get a see through material.
+
+128
+00:05:41,670 --> 00:05:42,887
+So we took a look.
+
+129
+00:05:42,887 --> 00:05:47,190
+This is basically all of the settings that involve sort
+
+130
+00:05:47,269 --> 00:05:50,320
+of the outer appearance of our texture.
+
+131
+00:05:50,320 --> 00:05:53,214
+And the next important tap that we have is the
+
+132
+00:05:53,277 --> 00:05:57,303
+physical property which involves the property of the fabric that
+
+133
+00:05:57,366 --> 00:06:00,385
+we have an we're going to tackle this further in
+
+134
+00:06:00,385 --> 00:06:01,883
+the next clip.
