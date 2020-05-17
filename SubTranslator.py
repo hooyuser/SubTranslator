@@ -38,19 +38,52 @@ def translate(q, from_lang='auto', to_lang='zh'):
             httpClient.close()
 
 
-def srt2srt(input_file, from_lang='auto', to_lang='zh'):
+def srt2srt_by_one(input_file, from_lang='auto', to_lang='zh', bi_sub=True):
     with open(input_file, 'r', encoding='utf-8') as f_in:
         output_file = input_file[:-4] + '_trans' + input_file[-4:]
         with open(output_file, 'w', encoding='utf-8') as f_out:
             for line in f_in:
-                pattern = re.compile('^\d*$|\d{2}:\d{2}:\d{2},\d{3}|\n')
+                pattern = re.compile('^\d*$|\d{2}:\d{2}:\d{2},\d{3}')
                 if re.match(pattern, line):
                     f_out.write(line)
                 else:
                     line_trans = translate(line.strip(), from_lang, to_lang)
                     print(line_trans)
+                    if bi_sub:
+                        f_out.write(line)
                     f_out.write(line_trans + '\n')
 
 
-input_srt = '25 - Applying Colors and Patterns.srt'
+def srt2srt(input_file, from_lang='auto', to_lang='zh', bi_sub=True):
+    sub_list, format_list = [], []
+    output_file = input_file[:-4] + '_trans' + input_file[-4:]
+    with open(input_file, 'r', encoding='utf-8') as f_in:
+        for line in f_in:
+            if re.match(re.compile(r'^\d+\n$'), line):
+                format_list.append(line)
+            elif re.match(re.compile(r'^\d{2}:\d{2}:\d{2},\d{3}'), line):
+                format_list[-1] += line
+            elif line == '\n':
+                continue
+            else:
+                sub_list.append(line.strip())
+    sep = '. one. '
+    text = sep.join(sub_list)
+    text_trans = translate(text, from_lang, to_lang)
+    trans_list = text_trans.split('一个。')
+
+    if not len(format_list) == len(sub_list) == len(trans_list):
+        print('Length not match!')
+    else:
+        with open(output_file, 'w', encoding='utf-8') as f_out:
+            for i, line in enumerate(format_list):
+                f_out.write(line)
+                if bi_sub:
+                    f_out.write(sub_list[i] + '\n')
+                punctuation = '，。？！；：,.?!:;'  # Delete punctuations at the end of sentences
+                trans_line = re.sub(re.compile(r'[{}]+$'.format(punctuation)), "", trans_list[i])
+                f_out.write(trans_line + '\n\n')
+
+
+input_srt = '07.srt'
 srt2srt(input_srt)
