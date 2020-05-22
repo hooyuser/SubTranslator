@@ -44,7 +44,7 @@ def delete_end_punc(str):  # Delete punctuations at the end of sentences
     return re.sub(re.compile(r'[{}]+$'.format(punctuation)), "", str)
 
 
-def srt_trans_srt_by_one(input_file, from_lang='auto', to_lang='zh', bi_sub=True):
+def srt_trans_srt_by_one(input_file, from_lang, to_lang='zh', bi_sub=True):
     with open(input_file, 'r', encoding='utf-8') as f_in:
         output_file = input_file[:-4] + '_trans' + input_file[-4:]
         with open('Output/' + output_file, 'w', encoding='utf-8') as f_out:
@@ -60,7 +60,7 @@ def srt_trans_srt_by_one(input_file, from_lang='auto', to_lang='zh', bi_sub=True
                     f_out.write(line_trans + '\n')
 
 
-def srt_trans_srt(input_file, from_lang='auto', to_lang='zh', bi_sub=True, from_lang_top=True):
+def srt_trans_srt(input_file, from_lang, to_lang='zh', bi_sub=True, from_lang_top=True):
     """
     Translate the language in the input file into another language
     :param input_file: the srt file to be translated
@@ -70,7 +70,15 @@ def srt_trans_srt(input_file, from_lang='auto', to_lang='zh', bi_sub=True, from_
     :param from_lang_top: whether from_lang subtitles are higher than to_lang subtitles in the output file
     """
     sub_list, format_list = [], []
-    output_file = input_file[:-4] + '_trans' + input_file[-4:]
+    name = re.search(re.compile(r'\w+(?=\.)'), input_file).group()
+    if bi_sub:
+        if from_lang_top:
+            output_file = '{}_{}_{}.srt'.format(name, from_lang, to_lang)
+        else:
+            output_file = '{}_{}_{}.srt'.format(name, to_lang, from_lang)
+    else:
+        output_file = '{}_{}.srt'.format(name, to_lang)
+
     with open(input_file, 'r', encoding='utf-8') as f_in:
         for line in f_in:
             if re.match(re.compile(r'^\d+\n$'), line):
@@ -102,6 +110,7 @@ def srt_trans_srt(input_file, from_lang='auto', to_lang='zh', bi_sub=True, from_
                         f_out.write(sub_list[i] + '\n\n')
                 else:
                     f_out.write(trans_line + '\n\n')
+        return output_file
 
 
 def srt_t2ass_t(time):
@@ -123,18 +132,18 @@ def srt_t2ass_t(time):
     return ass_s + ass_e
 
 
-def srt2ass(input_file, language, swap=False):  # from_lang_top:
+def srt2ass(input_file, language, swap=False):
     """
     Convert srt to ass
     :param input_file:
     :param language: the language of the input srt file. ex. 'zh_en'
-    :param from_lang_top: whether from_lang subtitles are higher than to_lang subtitles in the ass
+    :param swap: whether transform the position of the two subtitle layers in different languages
     """
     config = toml.load('config.toml')
     time_list = []
-    output_file = re.search(re.compile('\w+\.'), input_file).group() + 'ass'
+    output_file = re.search(re.compile(r'[^/]+\.'), input_file).group() + 'ass'
 
-    if len(language) > 2 and re.search(re.compile(r'zh'), language):
+    if len(language) > 2 and re.search(re.compile('zh'), language):
         high_line, low_line = language[:2] + '_line', language[-2:] + '_line'
         high_sub_list, low_sub_list = [], []
         with open(input_file, 'r', encoding='utf-8') as f_in:
@@ -158,10 +167,12 @@ def srt2ass(input_file, language, swap=False):  # from_lang_top:
         else:
             with open('Output/' + output_file, 'w', encoding='utf-8') as f_out:
                 if language == 'zh_en' or language == 'en_zh':
+                    if swap:
+                        language = language[-2:] + '_' + language[:2]
                     f_out.write(config[language + '_ass']['header'] + '\n')
                     for i, line in enumerate(time_list):
                         ass_t = srt_t2ass_t(time_list[i])
-                        ass_t_p = re.compile('\d+:\d{2}:\d{2}.\d{2},\d+:\d{2}:\d{2}.\d{2}')
+                        ass_t_p = re.compile(r'\d+:\d{2}:\d{2}.\d{2},\d+:\d{2}:\d{2}.\d{2}')
                         high_sub = re.sub(ass_t_p, ass_t, config[language + '_ass'][high_line]) + high_sub_list[i]
                         low_sub = re.sub(ass_t_p, ass_t, config[language + '_ass'][low_line]) + low_sub_list[i]
                         if swap:
@@ -172,7 +183,14 @@ def srt2ass(input_file, language, swap=False):  # from_lang_top:
                             f_out.write(low_sub)
 
 
-# input_srt = 'Examples/07.srt'
+def srt_trans_ass(input_file, from_lang, to_lang='zh', bi_sub=True, from_lang_top=True):
+    trans = srt_trans_srt(input_file, from_lang, to_lang, bi_sub, from_lang_top)
+    language = re.search(re.compile(r'(_[a-z]{2}){1,2}(?=\.)'), trans).group()[1:]
+    srt2ass(trans, language)
+
+
+input_srt = 'D:/Category/Video/ZBrush 2020从入门到精通全方位训练课ZBrush 2020 Essential Training/002 - Preparing for this course.srt'
+srt2ass(input_srt, 'zh_en', swap=True)
 # srt_trans_srt(input_srt)
-input_srt = 'Examples/07_trans.srt'
-srt2ass(input_srt, 'en_zh')
+# input_srt = 'Output/16_trans.srt'
+# srt2ass(input_srt, 'en_zh')
